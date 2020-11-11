@@ -57,6 +57,8 @@ namespace InterfaceExercise
                vehicle.Drive();
                 vehicle.ChangeGears(true);
                 vehicle.Reverse();
+                Console.WriteLine(vehicle.Salary);
+                Console.WriteLine(vehicle.DressCode);
 
                 Console.WriteLine($"The vehicle has {vehicle.DoorAmount} doors. The vehicle is {vehicle.Color}. " +
                 $"There are 4 tires on this vehicle: {vehicle.isFourTires = false}. The windows {vehicle.Windows} ");
@@ -66,10 +68,7 @@ namespace InterfaceExercise
                 Console.WriteLine("------------------");
 
             }
-            foreach(var vehicle in company)
-            {
-                Console.WriteLine($"{vehicle.Salary} {vehicle.DressCode}");
-            }
+            
         }
     }
 }
